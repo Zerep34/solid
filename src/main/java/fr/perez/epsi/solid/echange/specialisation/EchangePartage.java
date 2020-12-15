@@ -7,7 +7,7 @@ import java.util.List;
 public class EchangePartage extends Echange {
 
     @Override
-    public void echange(List<Double> pop, int i, int j){
+    public void echange(List<Double> pop, int i, int j) {
         double potCommun = this.calculPotCommun(pop.get(i), pop.get(j));
         double firtsPart = Math.random() * (potCommun - 0);
         double secondPart = potCommun - firtsPart;

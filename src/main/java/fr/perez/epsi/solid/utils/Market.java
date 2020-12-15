@@ -11,15 +11,11 @@ import java.util.List;
 
 public class Market {
 
-    ParamConfig paramConfig;
-
-    Transaction classTransaction;
-
-    Echange classEchange;
-
-    Richesse classRichesse;
-
     public List<Double> population;
+    ParamConfig paramConfig;
+    Transaction classTransaction;
+    Echange classEchange;
+    Richesse classRichesse;
 
     public Market(ParamConfig paramConfig, Echange classEchange, Richesse classRichesse,
                   Transaction classTransaction, IIndividuFactory factoryIndividu) {
@@ -30,7 +26,7 @@ public class Market {
         this.population = factoryIndividu.factoryIndividu(paramConfig, classRichesse);
     }
 
-    public void marketExchange(){
+    public void marketExchange() {
         for (int i = 0; i < paramConfig.getIteration(); i++) {
             classTransaction.transaction(this.population, classEchange);
         }

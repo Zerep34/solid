@@ -16,7 +16,7 @@ import fr.perez.epsi.solid.utils.Market;
 public class SolidApplication {
 
     public static void main(String[] args) {
-        ParamConfig paramConfig = new ParamConfig(100,20,10000,1000);
+        ParamConfig paramConfig = new ParamConfig(100, 20, 10000, 1000);
 
         Echange classEchange = new EchangePartage();
 //        Echange classEchange = new EchangeComplet();

@@ -9,10 +9,11 @@ import java.util.List;
 
 public class IndividuFactory implements IIndividuFactory {
 
-    public IndividuFactory(){}
+    public IndividuFactory() {
+    }
 
     @Override
-    public List<Double> factoryIndividu(ParamConfig paramConfig, Richesse classRichesse){
+    public List<Double> factoryIndividu(ParamConfig paramConfig, Richesse classRichesse) {
         List<Double> pop = new ArrayList<>();
         for (int i = 0; i < paramConfig.getN(); i++) {
             pop.add(classRichesse.calculRichesseIndividu(paramConfig.getSigma(), paramConfig.getMu()));

@@ -7,7 +7,7 @@ import java.util.List;
 public class EchangeComplet extends Echange {
 
     @Override
-    public void echange(List<Double> pop, int i, int j){
+    public void echange(List<Double> pop, int i, int j) {
         double potCommun = this.calculPotCommun(pop.get(i), pop.get(j));
         int choosenOne = this.choice();
         if (choosenOne == 1) {

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IIndividuFactory {
 
-    public List<Double> factoryIndividu(ParamConfig paramConfig, Richesse classRichesse);
+    List<Double> factoryIndividu(ParamConfig paramConfig, Richesse classRichesse);
 }
