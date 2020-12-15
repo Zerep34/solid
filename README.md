@@ -22,3 +22,18 @@ L’objectif du travail est de concevoir l’application en respectant les 5 pri
 * Une seconde loi de transaction telle que le pot commun soit intégralement reversé à un seul des acteurs, choisi aléatoirement parmi les deux.
 * Une seconde loi d’interaction telle que chaque individu n’interagit qu’avec son voisin.
 * Une seconde loi de distribution initiale de la richesse (comme par exemple une distribution log-normale ou chi).
+
+## Execution du projet
+Afin de lancer le projet, la fonction main se trouve dans la classe SolidApplication.
+
+Il est également possible de paramétrer l'exécution via les classes spécialisé dont voici une liste :
+
+* Echange : permet de spécifier le type d'échange entre les individus
+    * EchangeComplet : Tous le pot commun n'est distribué qu'à un seul individu tiré au hasard
+    * EchangePartage : Partage aléatoire du pot commun entre les indivus
+* Richesse : permet de spécifier quel type d'allocation des richesses sera employé
+    * RichesseLoiNormale : Allocation respectant une loi normale, selon un mu et un sigma donné
+    * RichesseRandom : Allocation aléatoire, selon un écart de plus ou moins sigma autour de mu
+* Transaction : permet de spéicifier entre quels partis une transaction sera effectués
+    * TransactionAleatoire : Transaction entre deux individus sélectionnés aléatoirement
+    * TransactionVoisin : Transaction entre les voisins directs
