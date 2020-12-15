@@ -6,11 +6,18 @@ import fr.perez.epsi.solid.transaction.Transaction;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Transaction entre deux individus aléatoire
+ */
 public class TransactionAleatoire extends Transaction {
 
     public TransactionAleatoire() {
     }
 
+    /**
+     * @param pop          Liste de richesse
+     * @param classEchange Type d'échange à effectuer
+     */
     @Override
     public void transaction(List<Double> pop, Echange classEchange) {
         Random random = new Random();

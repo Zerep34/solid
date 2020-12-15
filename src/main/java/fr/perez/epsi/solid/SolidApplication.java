@@ -13,8 +13,15 @@ import fr.perez.epsi.solid.transaction.specialisation.TransactionAleatoire;
 import fr.perez.epsi.solid.utils.Gini;
 import fr.perez.epsi.solid.utils.Market;
 
+/**
+ * Class d'exécution du projet
+ */
 public class SolidApplication {
 
+    /**
+     * Initialisation des objets et lancement des méthodes
+     * @param args arguments
+     */
     public static void main(String[] args) {
         // ParamConfig(mu, sigma, iteration, n)
         ParamConfig paramConfig = new ParamConfig(100, 20, 10000, 1000);

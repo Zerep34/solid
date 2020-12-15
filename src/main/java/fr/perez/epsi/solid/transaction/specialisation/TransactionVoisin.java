@@ -6,11 +6,18 @@ import fr.perez.epsi.solid.transaction.Transaction;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Transaction de voisin à voisin
+ */
 public class TransactionVoisin extends Transaction {
 
     public TransactionVoisin() {
     }
 
+    /**
+     * @param pop          Liste de richesse
+     * @param classEchange Type d'échange à effectuer
+     */
     @Override
     public void transaction(List<Double> pop, Echange classEchange) {
         Random random = new Random();
