@@ -18,7 +18,7 @@ Il s’agit de concevoir une simulation d’une place marché où il existe une 
 
 ### Déroulement
 L’objectif du travail est de concevoir l’application en respectant les 5 principes SOLID et proposer ainsi une application robuste, maintenable et évolutive.  Dans un premier temps, on veillera à développer un programme fonctionnel. Dans un second temps, on proposera :
-* La lecture des paramètres d’entrées de la simulation (taille de la population, (μ, σ), nombre d’itérations) depuis un fichier JSON ou YAML.
+* La lecture des paramètres d’entrées de la simulation (taille de la population, (mu, sigma), nombre d’itérations) depuis un fichier JSON ou YAML.
 * Une seconde loi de transaction telle que le pot commun soit intégralement reversé à un seul des acteurs, choisi aléatoirement parmi les deux.
 * Une seconde loi d’interaction telle que chaque individu n’interagit qu’avec son voisin.
 * Une seconde loi de distribution initiale de la richesse (comme par exemple une distribution log-normale ou chi).
