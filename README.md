@@ -9,7 +9,7 @@ Programmer une application de simulation économique de transactions financière
 
 ### Explications
 Il s’agit de concevoir une simulation d’une place marché où il existe une population d’individus,chacun ayant un certain niveau de richesse.  A chaque itération, deux acteurs (un acheteur et un vendeur) choisis parmi la population par une fonction  d’interaction effectuent une transaction qui résulte d’un échange de richesse entre eux selon une fonction de transaction.L’objectif est de comprendre l’évolution de la richesse de la population au cours du temps.
-* On modélisera une population de n individus, chacun possédant une certaine richesse définie par une distribution normale de paramètres μ= 100 et σ= 20.
+* On modélisera une population de n individus, chacun possédant une certaine richesse définie par une distribution normale de paramètres.
 * Pour contrôler la répartition de la richesse au sein de la population au cours de la simulation, on calculera le paramètre de Gini. On veillera à trier le vecteur des richesses par ordre croissant.
 * Au cours d’une transaction, deux acteurs interagissent et échangent leur richesse.  La fonction de transaction considérée est telle que la totalité de l’argent des deux acteurs est mise dans un pot commun, puis ce pot est divisé aléatoirement entre les deux acteurs.
 * La fonction d’interaction est telle que les deux acteurs sont choisis aléatoirement dans la population.
